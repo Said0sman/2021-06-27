@@ -66,7 +66,7 @@ export default function AnställdaInfo() {
         <div className="fl w-35">
           <img src={madison} alt={data.alt_info} className="ml4" />
           <div className="fr mt2 pl4">
-            <h2>Tyson Field</h2>
+            <h2>Madison Field</h2>
             <p>AGE: 25</p>
             <p>LOCATION: Boston</p>
             <p>STATUS: Engaged</p>
