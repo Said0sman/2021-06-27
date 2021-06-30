@@ -1,6 +1,6 @@
 :root {
     --primary-color: #d8a557;
-    --secondary-color: #7c989cc4;
+    --secondary-color: #bed3d1c4;
     --thirdley-color: #0c1a30;
     --fourth-color: #f8f8f8;
     --fifth-color: #f8fafa5b;
@@ -11,7 +11,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: "Alegreya Sans - Regular", serif;
-    background-color:#eefcf9b2
+    background-color:#ebf7f4b2
 
   }
   
