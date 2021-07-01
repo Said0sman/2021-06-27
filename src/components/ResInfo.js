@@ -5,7 +5,6 @@ export default function ResInfo() {
   const [input1, setInput1] = useState(0);
   const [input2, setInput2] = useState(0);
   const [input3, setInput3] = useState(0);
-  const [totalSum1, settotalSum] = useState()
   let totalSum = parseInt(input1) * parseInt(input2) * parseInt(input3);
 
   
@@ -37,22 +36,23 @@ export default function ResInfo() {
   return (
     <>
       <div className="fl w-100 ml2 mt4">
-        <label className="fl w-90">RESETRÄCKA</label>
-        <input
+        <label data-testid="Resa" className="fl w-90">RESETRÄCKA</label>
+        <input data-testid="Input"
           className="pl5"
           type="number"
+          value={input1}
           min="0"
           placeholder="Km"
-          onChange={(event) => setInput1(event.target.value)}
+          onChange={(event) => setInput1(parseInt(event.target.value))}
         ></input>
         <br />
         <br />
-        <label className="fl w-90 ml1">BRÄNSLEFÖRBRUKNING</label>
+        <label data-testid="Bränsle" className="fl w-90 ml1">BRÄNSLEFÖRBRUKNING</label>
         <input className="pl5" type="number" min="0" placeholder="L / 100 Km" onChange={(event) => setInput2(event.target.value)}
         ></input>
         <br />
         <br />
-        <label className="fl w-90">BENSIN- 98</label>
+        <label data-testid="Bensin" className="fl w-90">BENSIN- 98</label>
         <input
           className="pl5"
           type="number"
@@ -63,7 +63,7 @@ export default function ResInfo() {
         <br />
         <br />
         <div>
-          <button onClick={reset} className="fl mb3">
+          <button data-testid="Rensa"  onClick={reset} className="fl mb3">
             RENSA
           </button>
           <div className="fr mr3">

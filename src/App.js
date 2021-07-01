@@ -3,13 +3,14 @@ import './App.css';
 import AnställdaInfo from "./components/AnställdaInfo.js";
 import ResInfo  from "./components/ResInfo.js";
 
+
 function App() {
   return (
     <>
     <Navbar/>
     <AnställdaInfo/> 
-    
      <ResInfo/>
+
     </>
   );
 }
